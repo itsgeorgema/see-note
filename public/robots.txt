@@ -1,3 +1,35 @@
+# SeeNote - Guitar Note Detection App
+# https://github.com/itsgeorgema/see-note
 # https://www.robotstxt.org/robotstxt.html
+
+# Allow all web crawlers to access the project
 User-agent: *
-Disallow:
+
+# Allow access to all content
+Allow: /
+
+# Specific rules for different crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Allow access to project files and documentation
+Allow: /src/
+Allow: /public/
+Allow: /docs/
+Allow: /README.md
+Allow: /package.json
+
+# Sitemap location (if you create one later)
+# Sitemap: https://github.com/itsgeorgema/see-note/sitemap.xml
+
+# Crawl delay (optional - be respectful to GitHub's servers)
+Crawl-delay: 1
